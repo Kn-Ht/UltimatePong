@@ -2,3 +2,7 @@
 **/*~
 ultimatepong*
 !ultimatepong.odin
+
+# Added by cargo
+
+/target
