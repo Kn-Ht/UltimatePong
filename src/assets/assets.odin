@@ -13,7 +13,7 @@ Fonts :: struct {
 load_font :: #force_inline proc($path: string, $ext: cstring) -> rl.Font {
     bytes := #load(path, []u8)
     size := i32(len(bytes))
-    return rl.LoadFontFromMemory(ext, &bytes[0], size, 10, nil, 0)
+    return rl.LoadFontFromMemory(ext, &bytes[0], size, 100, nil, 0)
 }
 
 load_fonts :: proc() -> (f: Fonts) {
