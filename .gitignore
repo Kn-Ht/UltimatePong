@@ -1,8 +1,5 @@
 **/.DS_Store
 **/*~
-ultimatepong*
-!ultimatepong.odin
-
-# Added by cargo
-
-/target
+bin/*
+assetpack*
+!assetpack.c
