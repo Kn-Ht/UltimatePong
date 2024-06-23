@@ -1,6 +1,3 @@
-#include "raylib.h"
-#include <stdio.h>
-
 #include "src/pong.c"
 
 int main(void) {

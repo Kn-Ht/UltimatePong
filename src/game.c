@@ -1,9 +1,6 @@
 #pragma once
 
 #include "rl.h"
-#include "menu/menu.c"
-#include "assets/assets.c"
-#include "ui_style.c"
 
 typedef enum gamestate {
     GM_MENU = 0,
@@ -16,6 +13,11 @@ typedef struct game {
     bool paused;
     gamestate_t gamestate;
 } game_t;
+
+
+#include "menu/menu.c"
+#include "assets/assets.c"
+#include "ui_style.c"
 
 game_t game_new() {
     // Load assets

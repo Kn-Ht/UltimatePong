@@ -4,7 +4,7 @@
 #include "generator.c"
 #include "8_bit_arcade/arcade_8bit_in.h"
 #include "8_bit_arcade/arcade_8bit_out.h"
-#include "pixel_operator/PixelOperator.h"
+//#include "pixel_operator/PixelOperator.h"
 
 // TODO: compress all data (it was not working before)
 

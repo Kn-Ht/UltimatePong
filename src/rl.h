@@ -1,6 +1,8 @@
 //! rl.h: Includes Raylib and Raygui and provides convenience functions
 #pragma once
 
+#define VERSION "0.1.0"
+
 #define RAYGUI_IMPLEMENTATION
 
 #include "raylib.h"
@@ -36,6 +38,7 @@ typedef Rectangle rect;
 #define vec2sub Vector2Subtract
 #define vec2subv Vector2SubtractValue
 #define vec2div Vector2Divide
+#define vec2divv(L, R) Vector2Divide(L, vec2(R, R))
 #define vec2mul Vector2Multiply
 
 Color random_color(Color min, Color max) {
