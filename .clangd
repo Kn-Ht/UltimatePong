@@ -1,4 +1,0 @@
-CompileFlags:
-	Add:
-		- "-Iraylib/src"
-		- "-Iraygui/src"

@@ -3,3 +3,7 @@
 bin/*
 assetpack*
 !assetpack.c
+
+# Added by cargo
+
+/target
