@@ -1,16 +1,16 @@
 # Compiler flags
 CFLAGS = -Iraylib/src -Iraygui/src -Lraylib/src -lraylib -Wall -Wextra -Wpedantic
-CFLAGS_RELEASE := -O3 -static 
+CFLAGS_RELEASE := -Ofast
 
 # Detect operating system
 # TODO: add logic for debug mode to remove -mwindows
 ifeq ($(OS),Windows_NT)
-    CFLAGS +=  -lgdi32 -lwinmm
+    CFLAGS +=  -lgdi32 -lwinmm -static 
 	CFLAGS_RELEASE += -mwindows
 else
     UNAME_S := $(shell uname -s)
     ifeq ($(UNAME_S),Linux)
-        CFLAGS += 
+        CFLAGS += -static
     endif
     ifeq ($(UNAME_S),Darwin)
         CFLAGS += -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL
